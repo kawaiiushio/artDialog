@@ -1,4 +1,4 @@
-/*!
+﻿/*!
 * artDialog 5.0.4
 * Date: 2013-07-31
 * https://github.com/aui/artDialog
