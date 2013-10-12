@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>No Title</title>
+        <link href="./skins/default.css" rel="stylesheet" />
+        <script src="./artDialog.min.js"></script>
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+        <script>
+            function clickme() {
+                art.dialog({
+                    title: '信息',
+                    lock: true,
+                    content: 'Alert！',
+                    ok: function () {
+                        art.dialog ({ title:'信息',content:'你点击了确定',ok:function(){} });
+                    },
+                    cancel: function () {
+                        art.dialog ({ title:'信息',content:'你点击了取消',ok:function(){} });
+                    }
+                });
+            }
+            function go_action() {
+                window.open('http://aiyou.im');
+            }
+        </script>
+        <style>
+            .fright {
+                float:right;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="container">
+        <h1>aD<small>&nbsp;artDialog简单示例页面</small></h1>
+        <hr>
+        <h5 class="text-muted">演示:</h5>
+        <button class="btn btn-success" onclick="clickme();">戳我</button>
+        <br><br>
+        <h5 class="text-muted">JS 代码:</h5>
+        <pre style="margin:15px 0;font:100 12px/18px monaco, andale mono, courier new;padding:10px 12px;border:#ccc 1px solid;border-left-width:4px;background-color:#fefefe;box-shadow:0 0 4px #eee;word-break:break-all;word-wrap:break-word;color:#444"><span style="color:#708">function</span> <span style="color:#000">clickme</span>() {<br>                <span style="color:#000">art</span>.<span style="color:#000">dialog</span>({<br>                    <span style="color:#000">title</span>: <span style="color:#a11">'信息'</span>,<br>                    <span style="color:#000">lock</span>: <span style="color:#219">true</span>,<br>                    <span style="color:#000">content</span>: <span style="color:#a11">'Alert！'</span>,<br>                    <span style="color:#000">ok</span>: <span style="color:#708">function</span> () {<br>                        <span style="color:#000">art</span>.<span style="color:#000">dialog</span> ({ <span style="color:#000">title</span>:<span style="color:#a11">'信息'</span>,<span style="color:#000">content</span>:<span style="color:#a11">'你点击了确定'</span>,<span style="color:#000">ok</span>:<span style="color:#708">function</span>(){} });<br>                    },<br>                    <span style="color:#000">cancel</span>: <span style="color:#708">function</span> () {<br>                        <span style="color:#000">art</span>.<span style="color:#000">dialog</span> ({ <span style="color:#000">title</span>:<span style="color:#a11">'信息'</span>,<span style="color:#000">content</span>:<span style="color:#a11">'你点击了取消'</span>,<span style="color:#000">ok</span>:<span style="color:#708">function</span>(){} });<br>                    }<br>                });<br>            }</pre>
+    
+        <hr>
+        <p class="text-muted fright" onclick="go_action();">By Aivier</p>
+    </div>
+    
+    </body>
+</html>

@@ -1474,7 +1474,7 @@ artDialog._templates =
 artDialog.defaults = {
 
     // 消息内容
-    content: '<div class="d-loading"><span>loading..</span></div>',
+    content: '<div class="d-loading"><span>加载中..</span></div>',
     
     // 标题
     title: 'message',
