@@ -1495,10 +1495,10 @@ artDialog.defaults = {
     beforeunload: null,
     
     // 确定按钮文本
-    okValue: 'ok',
+    okValue: '确定',
     
     // 取消按钮文本
-    cancelValue: 'cancel',
+    cancelValue: '取消',
     
     // 内容宽度
     width: 'auto',
@@ -1522,7 +1522,7 @@ artDialog.defaults = {
     follow: null,
     
     // 是否锁屏
-    lock: false,
+    lock: true,
     
     // 是否固定定位
     fixed: false,
